@@ -19,8 +19,8 @@ class DNA(lengthOfTarget: Int, private val mutationRate: Float) {
     }
 
     fun crossover(partner: DNA): DNA {
-        val child: DNA = DNA(genes.size, mutationRate)
-        val crossoverPoint = Random().nextInt(genes.size)
+        val child = DNA(genes.size, mutationRate)
+        val crossoverPoint = Random(System.nanoTime()).nextInt(genes.size)
         for (i in 0 until crossoverPoint) {
             child.genes[i] = genes[i]
         }

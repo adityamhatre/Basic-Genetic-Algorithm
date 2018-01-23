@@ -6,7 +6,7 @@ import javax.swing.WindowConstants
  */
 val window = Window()
 fun main(args: Array<String>) {
-    var target = "aditya"
+    var target = "To be or not to be."
     val jFrame = JFrame()
     jFrame.title = "Genetic Algorithm"
     jFrame.contentPane = window.contentPane
